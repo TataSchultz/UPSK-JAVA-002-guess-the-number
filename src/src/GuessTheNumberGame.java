@@ -23,6 +23,9 @@ public class GuessTheNumberGame {
             }
         }
     }
+    public static void setTargetNumber(int number) {
+        targetNumber = number;
+    }
 
     public static int checkGuess(Player player) {
         int guess = player.makeGuess();

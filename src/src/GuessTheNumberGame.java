@@ -7,7 +7,7 @@ public class GuessTheNumberGame {
     public static void main(String[] args) {
         System.out.println("O jogo vai começar! Adivinhe o número de 0 a 100");
         targetNumber = random.nextInt(101);
-        System.out.println(targetNumber);
+//        System.out.println(targetNumber);
         Player player1 = new HumanPlayer("Jogadora");
         Player player2 = new ComputerPlayer("Computador");
 

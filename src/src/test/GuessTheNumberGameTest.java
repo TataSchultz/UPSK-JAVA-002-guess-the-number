@@ -1,10 +1,9 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.*;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.Random;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class GuessTheNumberGameTest {
 
@@ -45,7 +44,7 @@ public class GuessTheNumberGameTest {
 
         when(mockPlayer.makeGuess()).thenReturn(50);
         when(mockPlayer.getName()).thenReturn("Jogadora");
-        game.setTargetNumber(50); 
+        game.setTargetNumber(50);
         int guess = game.checkGuess(mockPlayer);
 
         assertEquals(50, guess);
